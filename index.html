@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanSofa - Професійна хімчистка меблів</title>
+    <meta name="description" content="Професійна хімчистка диванів, крісел та м'якої мебелі в Києві. Швидко, якісно, з гарантією. Виїзд майстра безкоштовно!">
+
+    <!-- Preload critical resources -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2310b981'/><text y='70' font-size='60' text-anchor='middle' x='50' fill='white'>🛋️</text></svg>">
+</head>
+<body>
+<!-- Loading Spinner -->
+<div id="loading" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <p>CleanSofa завантажується...</p>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <img src="logo-cleansofa.PNG" alt="CleanSofa">
+            </div>
+            <div class="nav-text">
+                <h1>CleanSofa</h1>
+                <span>Професійна хімчистка</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#hero" class="nav-link">Головна</a></li>
+            <li><a href="#services" class="nav-link">Послуги</a></li>
+            <li><a href="#about" class="nav-link">Переваги</a></li>
+            <li><a href="#process" class="nav-link">Як працюємо</a></li>
+            <li><a href="#contact" class="nav-link">Контакти</a></li>
+        </ul>
+
+        <div class="nav-cta">
+            <a href="tel:+380666509852" class="btn-call">
+                <i class="fas fa-phone"></i>
+                <span class="btn-text">Зателефонувати</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-background">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+
+    <div class="hero-content">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>№1 в Білій Церкві</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Професійна <span class="gradient-text">хімчистка</span> м'яких меблів
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Повертаємо первісний вигляд вашим диванам та кріслам.
+                        Швидко, якісно та з гарантією результату!
+                    </p>
+
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Швидко: 1-2 години</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Гарантія результату</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Виїзд по Києву</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="https://www.instagram.com/clean_sofa_bc?igsh=cjVnencyOTJjNzVm" class="btn btn-primary">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://t.me/cleansofabc" class="btn btn-secondary">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <div class="before-after">
+                            <div class="before">
+                                <span class="label">До</span>
+                                <div class="sofa-image">
+                                    <img src="before-sofa.jpg" alt="Диван до чистки" onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+                                </div>
+                            </div>
+                            <div class="after">
+                                <span class="label">Після</span>
+                                <div class="sofa-image">
+                                    <img src="after-sofa.jpg" alt="Диван після чистки" onerror="this.style.display='none'; this.parentNode.classList.add('placeholder');">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Задоволених клієнтів</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2 роки</div>
+                            <div class="stat-label">Досвіду роботи</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Прийом заявок</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Наші послуги</div>
+            <h2 class="section-title">Що ми чистимо та скільки це коштує</h2>
+            <p class="section-subtitle">Прозорі ціни без прихованих доплат</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card featured">
+                <div class="service-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Двомісний диван</h3>
+                    <p>Глибока очистка з видаленням всіх типів забруднень</p>
+                    <div class="service-price">
+                        <span class="price">від 800</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <span><i class="fas fa-check"></i> Видалення плям</span>
+                    <span><i class="fas fa-check"></i> Дезінфекція</span>
+                    <span><i class="fas fa-check"></i> Відновлення кольору</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Тримісний диван</h3>
+                    <p>Професійна чистка великих диванів</p>
+                    <div class="service-price">
+                        <span class="price">від 1000</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <span><i class="fas fa-check"></i> Обробка всіх поверхонь</span>
+                    <span><i class="fas fa-check"></i> Чистка між подушок</span>
+                    <span><i class="fas fa-check"></i> Антибактеріальний захист</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-couch"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Кутовий диван</h3>
+                    <p>Чистка складних конфігурацій</p>
+                    <div class="service-price">
+                        <span class="price">від 1200</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <span><i class="fas fa-check"></i> Обробка всіх кутів</span>
+                    <span><i class="fas fa-check"></i> Спеціальні насадки</span>
+                    <span><i class="fas fa-check"></i> Гнучкий підхід</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chair"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Крісло</h3>
+                    <p>Делікатна обробка м'яких крісел</p>
+                    <div class="service-price">
+                        <span class="price">від 350</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <span><i class="fas fa-check"></i> Ручна обробка</span>
+                    <span><i class="fas fa-check"></i> М'які засоби</span>
+                    <span><i class="fas fa-check"></i> Збереження форми</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chair"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Стілець</h3>
+                    <p>Швидка чистка стільців</p>
+                    <div class="service-price">
+                        <span class="price">від 150</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <span><i class="fas fa-check"></i> Експрес-чистка</span>
+                    <span><i class="fas fa-check"></i> Захист оббивки</span>
+                    <span><i class="fas fa-check"></i> Швидке висихання</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bed"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Матрац</h3>
+                    <p>Глибока дезінфекція та очистка</p>
+                    <div class="service-price">
+                        <span class="price">від 400</span>
+                        <span class="currency">грн</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <span><i class="fas fa-check"></i> Протикліщова обробка</span>
+                    <span><i class="fas fa-check"></i> Видалення запахів</span>
+                    <span><i class="fas fa-check"></i> Гіпоалергенні засоби</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-note">
+            <div class="note-content">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                    <strong>Виїзд в область:</strong> +250 грн<br>
+                    <span>Фінальна ціна залежить від ступеня забруднення та розміру меблів</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="section-badge">Чому обирають нас</div>
+                <h2 class="section-title">Працюємо професійно та з душею</h2>
+                <p class="about-text">
+                    CleanSofa - це команда досвідчених фахівців, які знають все про хімчистку м'якої мебелі.
+                    Ми використовуємо тільки професійне обладнання та сертифіковані засоби, безпечні для людей та домашніх тварин.
+                </p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Гарантія результату</h4>
+                            <p>Якщо не задоволені - повертаємо гроші</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Швидко та зручно</h4>
+                            <p>Чистка займає 1-2 години, працюємо у зручний час</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Безпечні засоби</h4>
+                            <p>Екологічно чисті препарати без шкідливих речовин</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h4>Професійне обладнання</h4>
+                            <p>Сучасні машини та технології чистки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-visual">
+                <div class="about-image">
+                    <div class="equipment-showcase">
+                        <div class="equipment-item">
+                            <div class="equipment-icon">
+                                <i class="fas fa-spray-can"></i>
+                            </div>
+                            <span>Професійні засоби</span>
+                        </div>
+                        <div class="equipment-item">
+                            <div class="equipment-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <span>Потужні екстрактори</span>
+                        </div>
+                        <div class="equipment-item">
+                            <div class="equipment-icon">
+                                <i class="fas fa-thermometer-half"></i>
+                            </div>
+                            <span>Гаряча обробка</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section id="process" class="process">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Процес роботи</div>
+            <h2 class="section-title">Як ми працюємо</h2>
+            <p class="section-subtitle">Простий та зрозумілий алгоритм</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="step-item">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Заявка</h3>
+                    <p>Зателефонуйте або напишіть у Telegram</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Оцінка</h3>
+                    <p>Майстер оглядає меблі та називає точну ціну</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Чистка</h3>
+                    <p>Ретельно чистимо меблі професійними засобами</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Результат</h3>
+                    <p>Перевіряємо якість та отримуємо вашу оплату</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Контакти</div>
+            <h2 class="section-title">Зв'яжіться з нами</h2>
+            <p class="section-subtitle">Оберіть зручний спосіб зв'язку</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-methods">
+                    <a href="tel:+380666509852" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Телефонуйте</h4>
+                            <span>+38 066 650 98 52</span>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/cleansofabc" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Telegram</h4>
+                            <span>@cleansofabc</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/clean_sofa_bc?igsh=cjVnencyOTJjNzVm" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Instagram</h4>
+                            <span>@clean_sofa_bc</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="working-hours">
+                    <h4><i class="fas fa-clock"></i> Режим роботи</h4>
+                    <p>
+                        Понеділок - Неділя: 8:00 - 20:00<br>
+                        Приймаємо заявки цілодобово
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-visual">
+                <div class="contact-image">
+                    <div class="contact-stats">
+                        <div class="contact-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Клієнтів</span>
+                            </div>
+                        </div>
+                        <div class="contact-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Гарантія</span>
+                            </div>
+                        </div>
+                        <div class="contact-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="stat-text">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Виїзд</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="logo-cleansofa.PNG" alt="CleanSofa">
+                    <span>CleanSofa</span>
+                </div>
+                <p>Професійна хімчистка м'якої мебелі в Києві та області</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Послуги</h4>
+                <a href="#services">Чистка диванів</a>
+                <a href="#services">Чистка крісел</a>
+                <a href="#services">Чистка матраців</a>
+                <a href="#services">Виїзд в область</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Контакти</h4>
+                <a href="tel:+380666509852">+38 066 650 98 52</a>
+                <a href="https://t.me/cleansofabc">Telegram</a>
+                <a href="https://www.instagram.com/clean_sofa_bc?igsh=cjVnencyOTJjNzVm">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 CleanSofa. Всі права захищені.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/clean_sofa_bc?igsh=cjVnencyOTJjNzVm"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/cleansofabc"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating Action Button -->
+<div class="floating-action">
+    <div class="fab-options">
+        <a href="tel:+380666509852" class="fab-option" title="Зателефонувати">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://t.me/cleansofabc" class="fab-option" title="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://www.instagram.com/clean_sofa_bc?igsh=cjVnencyOTJjNzVm" class="fab-option" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <button class="fab-main">
+        <i class="fas fa-comment"></i>
+    </button>
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
